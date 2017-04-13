@@ -1,0 +1,18 @@
+<h1>CLOCK WITH ANGULAR COMPONET</h1>
+
+<h2>DIGITAL VERSION</h2>
+<div id="digital" class="clockContainer">
+	<span>{{digitalFormat(hours)}}:{{digitalFormat(minutes)}}:{{digitalFormat(seconds)}}</span>
+</div>
+
+<h2>ANALOGUE VERSION</h2>
+<div id="analogue" class="clockContainer">
+	<span class="number twelve">12</span>
+	<span class="number three">3</span>
+	<span class="number six">6</span>
+	<span class="number nine">9</span>
+	<div class="dot"></div>
+	<div class="hand hours" [style.transform]="'rotate(' + hoursRotation + 'deg)'"><div></div></div>
+	<div class="hand minutes" [style.transform]="'rotate(' + minutesRotation + 'deg)'"><div></div></div>
+	<div class="hand seconds" [style.transform]="'rotate(' + secondsRotation + 'deg)'"><div></div></div>
+</div>	

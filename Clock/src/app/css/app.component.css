@@ -1,0 +1,84 @@
+h1 {
+    text-align: center;
+}
+h2 {
+    color: #404040;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 125%;
+    text-align: center;
+    margin-top: 100px;
+}
+.clockContainer{
+	margin : 40px auto;
+}
+/*DIGITAL*/
+#digital.clockContainer {
+	border: 20px solid #111;
+    text-align: center;
+    padding: 20px 40px;
+    font-family: monospace;
+    font-style: italic;
+    width: 300px;
+    border-radius: 10px;
+}
+#digital.clockContainer span {
+    font-size: 50pt;
+}
+/*ANALOGUE CLOCK*/
+#analogue.clockContainer {
+	background-color: white;
+    border-radius: 170px;
+    width: 300px;
+    height: 300px;
+    border: 20px solid #111;
+    display: flex;
+    justify-content: center;
+}
+#analogue.clockContainer .hand.hours{
+	height: 150px;
+	width: 10px;
+}
+#analogue.clockContainer .hand.minutes{
+	height: 225px;
+	width: 5px;
+}    
+#analogue.clockContainer .hand.seconds{
+	height: 250px;
+	width: 3px;
+}
+#analogue.clockContainer .hand{
+	background: none;
+}
+#analogue.clockContainer .hand > div{
+	background-color: #000;
+    height: 50%;
+    width: 100%;
+}
+#analogue.clockContainer .dot{
+	background-color: black;
+	padding: 10px;
+	border-radius: 10px;
+	z-index: 1;
+}   
+#analogue.clockContainer div{
+    align-self: center;
+    position: absolute;
+}
+#analogue .number {
+	position: absolute;
+    font-size: 45pt;
+    padding: 5px 10px;
+}
+#analogue .number.three {
+    align-self: center;
+    left: 50%;
+    position: relative;
+}
+#analogue .number.six {
+    align-self: flex-end;
+}
+#analogue .number.nine {
+    align-self: center;
+    left: -50%;
+    position: relative;
+}
