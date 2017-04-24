@@ -7,10 +7,9 @@ import { Component } from '@angular/core';
 
 })
 export class AppComponent  { 
-	timer;
-	hours : string;
-	minutes : string;
-	seconds : string;
+	hours : number;
+	minutes : number;
+	seconds : number;
 	hoursRotation : number;
 	minutesRotation : number;
 	secondsRotation : number;

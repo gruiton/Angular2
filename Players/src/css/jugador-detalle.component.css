@@ -1,0 +1,30 @@
+.playerDetail {
+    padding : 10px;
+}
+.playerDetail h2 {
+    font-size: 15pt;
+    padding: 20px 0px 10px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+}
+.playerDetail h2 span{
+    font-weight: bold;
+    color: #369;
+}
+
+.playerDetail > div {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #eee;
+}
+.playerDetail > div > div {
+    display: inline-block;
+}
+.playerDetail > div > div.labelDetail{
+    width: 200px;
+}
+.playerDetail > div > div.inputDetail{
+}
+.playerDetail > div > div.inputDetail input{
+    border: none;
+}

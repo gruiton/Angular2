@@ -1,0 +1,28 @@
+ <h1>{{title}}</h1>
+<h2>{{name}}</h2>
+<hr>
+<ul class="jugadores">
+    <li>
+        <div class="badgeHeader"></div>
+        <div class = "name"><span>Name</span></div>
+        <div class="presentacion"><span>Presentation</span></div>
+        <div class="estado"><span>Status</span></div>
+        <div class="puntos"><span>Score</span></div>
+    </li>
+    <li *ngFor = "let player of jugadores" (click) = "onSelect(player)">
+        <div><span class="badge">{{player.id}}</span></div>
+        <div class = "name"><span>{{player.name}}</span></div>
+        <div class="presentacion"><span>{{player.presentacion}}</span></div>
+        <div class="estado"><span>{{player.estado}}</span></div>
+        <div class="puntos"><span>{{player.puntos}}</span></div>
+        <div class="delete"><button type= "button" (click) = "onDelete(player)">Delete</button></div>
+    </li>
+</ul>
+
+<button (click) = "newPlayer()">Create new</button>
+<button (click) = "getLog()">Log</button>
+<button (click) = "onSave()">Save data</button>
+<button (click) = "onLoad()">Load data</button>
+<hr>
+
+<jugador-detalle [jugador]="selPlayer"></jugador-detalle>

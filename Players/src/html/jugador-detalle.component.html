@@ -1,0 +1,31 @@
+<div class="playerDetail" *ngIf="jugador">
+    <h2>Propiedades de <span>{{jugador.name}}</span></h2>
+    <div>
+        <div class="labelDetail"><label>Id: </label></div>
+        <div>{{jugador.id}}</div>
+    </div>
+    <div>
+        <div class="labelDetail"><label>Nombre: </label></div>
+        <div class="inputDetail"><input [(ngModel)]="jugador.name"  id = "ctrlName"/></div>
+    </div>
+    <div>
+        <div class="labelDetail"><label>Presentacion: </label></div>
+        <div class="inputDetail"><input [(ngModel)]="jugador.presentacion"  id = "ctrlPresentacion"/></div>
+    </div>
+    <div>
+        <div class="labelDetail"><label>Puntos: </label></div>
+        <div class="inputDetail"><input [(ngModel)]="jugador.puntos"  id = "ctrlScore"/></div>
+    </div>
+    <div>
+        <div class="labelDetail"><label>Estado: </label></div>
+        <select [(ngModel)]="jugador.estado" id = "ctrlStatus">
+            <option value = "1">Pendiente de activacion</option>
+            <option value = "2">Adtivado</option>
+            <option value = "3">Suspendido</option>
+            <option value = "4">Dado de baja</option>
+        </select>    
+    </div>
+    <div>
+        <div ><button (click) = "onSave()">Save</button></div>        
+    </div>
+</div>

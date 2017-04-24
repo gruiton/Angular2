@@ -1,0 +1,60 @@
+.selected{
+    background-color: #BBB;
+}
+.jugadores{
+    list-style-type: none;
+    padding: 10px;
+}
+.jugadores li{
+    background-color: #EEE
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #c4dbf3;
+}
+.jugadores li > div {
+    display: inline-block;
+}
+.jugadores li > div.badgeHeader {
+    width: 40px;
+}
+.jugadores li div.name {
+    width: 200px;
+}
+.jugadores li div.presentacion {
+    width: 300px;
+}
+.jugadores li div.estado, .jugadores li div.puntos {
+    width: 60px;
+    text-align: right;
+}
+.jugadores li div.delete {
+    width: 100px;
+    text-align: right;
+}
+.jugadores li div.presentacion span {
+    font-style: italic;
+}
+.jugadores li div.puntos {
+    /*float: right;*/
+}
+.jugadores li div.puntos span {
+    color: #ff7a7a;
+    font-weight: bold;
+}
+.jugadores li span{
+    padding: 0px 10px;
+}
+.jugadores li.selected:hover{
+    background-color: #FC0;
+}
+.jugadores li:hover{
+    background-color: #FC0;
+}
+.jugadores .badge{
+    border-radius: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #369;
+    padding: 0px;
+}
