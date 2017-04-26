@@ -1,0 +1,6 @@
+/* ESTILOS PARA EL COMPONENTE DEL RELOJ */
+.reloj-analogico{
+	width: 250px;
+	height: 250px;
+    border: 10px solid #333;
+}
